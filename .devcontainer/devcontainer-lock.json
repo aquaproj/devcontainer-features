@@ -1,0 +1,9 @@
+{
+  "features": {
+    "ghcr.io/suzuki-shunsuke/devcontainers-features-2/aqua-installer:0.1.1": {
+      "version": "0.1.1",
+      "resolved": "ghcr.io/suzuki-shunsuke/devcontainers-features-2/aqua-installer@sha256:5af67ae520e31f0c9d2b351e69e868cd35072a6fc8288036f264cfd2da193ff8",
+      "integrity": "sha256:5af67ae520e31f0c9d2b351e69e868cd35072a6fc8288036f264cfd2da193ff8"
+    }
+  }
+}

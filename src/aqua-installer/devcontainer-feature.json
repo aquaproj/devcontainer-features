@@ -1,0 +1,13 @@
+{
+    "name": "aqua-installer",
+    "id": "aqua-installer",
+    "version": "0.1.2",
+    "description": "Install aqua",
+    "options": {
+        "aqua_version": {
+            "type": "string",
+            "description": "The version of aqua. This option is required",
+            "default": ""
+        }
+    }
+}
