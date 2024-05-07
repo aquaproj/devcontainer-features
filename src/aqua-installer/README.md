@@ -36,12 +36,12 @@ aqua-installer requires bash and curl or wget, so this feature tries to install 
 
 You can update `aqua_version` by [aqua-renovate-config](https://aquaproj.github.io/docs/products/aqua-renovate-config).
 
-aqua-renovate-config 2.2.2 or newer is required.
+aqua-renovate-config [2.3.0](https://github.com/aquaproj/aqua-renovate-config/releases/tag/2.3.0) or newer is required.
 
 ```json
 {
   "extends": [
-    "github>aquaproj/aqua-renovate-config#2.2.2"
+    "github>aquaproj/aqua-renovate-config#2.3.0"
   ]
 }
 ```
