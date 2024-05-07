@@ -9,15 +9,5 @@
   "remoteEnv": {
     "PATH": "/root/.local/share/aquaproj-aqua/bin:${containerEnv:PATH}"
   },
-  "postStartCommand": "aqua -v"
-  // "customizations": {
-  //   "vscode": {
-  //     "extensions": [
-  //       "earthly.earthfile-syntax-highlighting",
-  //       "redhat.vscode-yaml",
-  //       "zxh404.vscode-proto3",
-  //       "biomejs.biome"
-  //     ]
-  //   }
-  // }
+  "postStartCommand": "aqua i -l"
 }
