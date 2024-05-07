@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "image": "debian:bookworm-20240423",
+  "features": {
+    "ghcr.io/suzuki-shunsuke/devcontainers-features-2/aqua-installer:0.1.1": {
+      "aqua_version": "v2.27.0"
+    }
+  },
+  "remoteEnv": {
+    "PATH": "/root/.local/share/aquaproj-aqua/bin:${containerEnv:PATH}"
+  },
+  "postStartCommand": "aqua i -l"
+}
