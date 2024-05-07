@@ -1,7 +1,7 @@
 {
     "name": "aqua-installer",
     "id": "aqua-installer",
-    "version": "0.1.2",
+    "version": "0.1.0",
     "description": "Install aqua",
     "options": {
         "aqua_version": {
