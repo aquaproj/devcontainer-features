@@ -15,7 +15,7 @@ aqua-installer requires bash and curl or wget, so this feature tries to install 
 {
   "image": "debian:bookworm-20240423",
   "features": {
-    "ghcr.io/aquaproj/devcontainers-features/aqua-installer:0.1.0": {
+    "ghcr.io/aquaproj/devcontainer-features/aqua-installer:0.1.0": {
       "aqua_version": "v2.27.0"
     }
   },
