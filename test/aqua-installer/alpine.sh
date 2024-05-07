@@ -3,4 +3,3 @@
 set -eu
 
 aqua -v
-
