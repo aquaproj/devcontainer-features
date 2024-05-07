@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussions
+    url: https://github.com/orgs/aquaproj/discussions
+    about: Please create a discussion instead of issue
+  - name: Slack
+    url: https://gophers.slack.com/archives/C04RALTG29K
+    about: Please ask questions freely
+  - name: Discord
+    url: https://discord.com/channels/1141777454164365382/1162444533959757955
+    about: Please ask questions freely
