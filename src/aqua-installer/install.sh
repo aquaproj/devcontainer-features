@@ -30,7 +30,7 @@ if ! has_command curl && ! has_command wget; then
 	if has_command apt-get; then
 		apt-get update -y
 		apt-get install -y curl
-	elif has_command apk > /dev/null 2>&1; then
+	elif has_command apk; then
 		apk add curl
 	else
 		log_error "Neither curl nor wget is found. Please install either curl or wget to download aqua"
