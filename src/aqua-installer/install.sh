@@ -43,7 +43,11 @@ ls
 
 url=https://raw.githubusercontent.com/aquaproj/aqua-installer/v3.0.0/aqua-installer
 
-tempdir=$(mktemp -d)
+if [ "$_REMOTE_USER" = root ]; then
+	tempdir=$(mktemp -d)
+else
+	tempdir=$(sudo -u "$_REMOTE_USER" mktemp -d)
+fi
 cd "$tempdir"
 
 if has_command curl; then
@@ -54,7 +58,22 @@ fi
 
 echo "8299de6c19a8ff6b2cc6ac69669cf9e12a96cece385658310aea4f4646a5496d  aqua-installer" | sha256sum -c
 
-chmod +x aqua-installer
-./aqua-installer
+chmod a+x aqua-installer
+if [ "$_REMOTE_USER" = root ]; then
+	./aqua-installer
+else
+	if ! has_command sudo; then
+		if has_command apt-get; then
+			apt-get update -y
+			apt-get install -y sudo
+		elif has_command apk; then
+			apk add sudo
+		else
+			log_error "Please install sudo to run aqua-installer as $_REMOTE_USER"
+			exit 1
+		fi
+	fi
+	sudo -u "$_REMOTE_USER" ./aqua-installer
+fi
 
 rm -R "$tempdir"
