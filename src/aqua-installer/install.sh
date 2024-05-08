@@ -57,7 +57,7 @@ echo "8299de6c19a8ff6b2cc6ac69669cf9e12a96cece385658310aea4f4646a5496d  aqua-ins
 
 chmod a+x aqua-installer
 if [ "$_REMOTE_USER" = root ]; then
-	./aqua-installer "$AQUA_VERSION"
+	./aqua-installer -v "$AQUA_VERSION"
 else
 	if ! has_command sudo; then
 		if has_command apt-get; then
@@ -70,7 +70,7 @@ else
 			exit 1
 		fi
 	fi
-	sudo -u "$_REMOTE_USER" ./aqua-installer "$AQUA_VERSION"
+	sudo -u "$_REMOTE_USER" ./aqua-installer -v "$AQUA_VERSION"
 fi
 
 rm -R "$tempdir"
