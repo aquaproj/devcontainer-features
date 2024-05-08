@@ -20,5 +20,18 @@
                 "aqua_version": "v2.27.0"
             }
         }
+    },
+    "alpine-nonroot": {
+        "build": {
+            "dockerfile": "Dockerfile"
+        },
+        "remoteEnv": {
+            "PATH": "/home/vscode/.local/share/aquaproj-aqua/bin:${containerEnv:PATH}"
+        },
+        "features": {
+            "aqua-installer": {
+                "aqua_version": "v2.27.0"
+            }
+        }
     }
 }
