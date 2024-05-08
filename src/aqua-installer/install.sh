@@ -38,9 +38,6 @@ if ! has_command curl && ! has_command wget; then
 	fi
 fi
 
-pwd
-ls
-
 url=https://raw.githubusercontent.com/aquaproj/aqua-installer/v3.0.0/aqua-installer
 
 if [ "$_REMOTE_USER" = root ]; then
