@@ -8,7 +8,7 @@ jobs:
       packages: write # To publish Development Containers Features
       contents: write # To push tags
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - uses: devcontainers/action@528049dce833673f136ddfc09c2720d450029a6b # v1.4.2
         with:
           publish-features: "true"
