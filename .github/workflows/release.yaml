@@ -3,6 +3,7 @@ on: workflow_dispatch
 
 jobs:
   deploy:
+    timeout-minutes: 30
     runs-on: ubuntu-latest
     permissions:
       packages: write # To publish Development Containers Features
