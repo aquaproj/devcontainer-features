@@ -1,6 +1,6 @@
 {
   extends: [
-    'github>suzuki-shunsuke/renovate-config#2.4.0',
-    'github>suzuki-shunsuke/renovate-config:nolimit#2.4.0',
+    'github>suzuki-shunsuke/renovate-config#3.2.0',
+    'github>suzuki-shunsuke/renovate-config:nolimit#3.2.0',
   ],
 }
