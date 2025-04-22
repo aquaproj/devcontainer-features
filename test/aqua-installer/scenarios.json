@@ -1,5 +1,5 @@
 {
-    "debian": {
+    "debian-old": {
         "image": "debian:bookworm-20240423",
         "remoteEnv": {
             "PATH": "/root/.local/share/aquaproj-aqua/bin:${containerEnv:PATH}"
@@ -10,6 +10,17 @@
             }
         }
     },
+    "debian": {
+        "image": "debian:bookworm-20240423",
+        "remoteEnv": {
+            "PATH": "/root/.local/share/aquaproj-aqua/bin:${containerEnv:PATH}"
+        },
+        "features": {
+            "aqua-installer": {
+                "aqua_version": "v2.50.0"
+            }
+        }
+    },
     "alpine": {
         "image": "alpine:3.19.1",
         "remoteEnv": {
@@ -17,7 +28,7 @@
         },
         "features": {
             "aqua-installer": {
-                "aqua_version": "v2.27.0"
+                "aqua_version": "v2.50.0"
             }
         }
     },
@@ -30,7 +41,7 @@
         },
         "features": {
             "aqua-installer": {
-                "aqua_version": "v2.27.0"
+                "aqua_version": "v2.50.0"
             }
         }
     }
