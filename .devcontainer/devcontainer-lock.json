@@ -1,9 +1,9 @@
 {
   "features": {
-    "ghcr.io/aquaproj/devcontainer-features/aqua-installer:0.1.0": {
-      "version": "0.1.0",
-      "resolved": "ghcr.io/aquaproj/devcontainer-features/aqua-installer@sha256:fdd01ae397066786a20020ab67a38c75c6a9125075b392a5170e60c50f828e78",
-      "integrity": "sha256:fdd01ae397066786a20020ab67a38c75c6a9125075b392a5170e60c50f828e78"
+    "ghcr.io/aquaproj/devcontainer-features/aqua-installer:0.1.3": {
+      "version": "0.1.3",
+      "resolved": "ghcr.io/aquaproj/devcontainer-features/aqua-installer@sha256:45f8402f85bbfd6f6d5ceb18f0673ced496dfd5ec526f119abedaa3c82a712de",
+      "integrity": "sha256:45f8402f85bbfd6f6d5ceb18f0673ced496dfd5ec526f119abedaa3c82a712de"
     }
   }
 }
