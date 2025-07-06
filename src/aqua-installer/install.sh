@@ -48,7 +48,7 @@ cd "$tempdir"
 url=https://raw.githubusercontent.com/aquaproj/aqua-installer/v4.0.2/aqua-installer
 
 if has_command curl; then
-	curl -sSfL -O "$url"
+	curl --retry 5 -sSfL -O "$url"
 elif has_command wget; then
 	wget "$url"
 fi
