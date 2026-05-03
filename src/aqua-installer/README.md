@@ -1,4 +1,3 @@
-
 # aqua-installer
 
 Development Container Feature to install aqua.
@@ -15,8 +14,8 @@ aqua-installer requires bash and curl or wget, so this feature tries to install 
 {
   "image": "debian:bookworm-20240423",
   "features": {
-    "ghcr.io/aquaproj/devcontainer-features/aqua-installer:0.1.3": {
-      "aqua_version": "v2.53.3"
+    "ghcr.io/aquaproj/devcontainer-features/aqua-installer:0.1.6": {
+      "aqua_version": "v2.57.2"
     }
   },
   "remoteEnv": {
@@ -41,7 +40,7 @@ aqua-renovate-config [2.3.0](https://github.com/aquaproj/aqua-renovate-config/re
 ```json
 {
   "extends": [
-    "github>aquaproj/aqua-renovate-config#2.8.2"
+    "github>aquaproj/aqua-renovate-config#2.12.0"
   ]
 }
 ```
