@@ -53,7 +53,7 @@ elif has_command wget; then
 	wget "$url"
 fi
 
-echo "d76bb5c3a23025e9d344aeba04c0a4d4ed6c9fb05e85530c8c3be2ef8e8f3a6a  aqua-installer" | sha256sum -c -
+echo "acd21cbb06609dd9a701b0032ba4c21fa37b0e3b5cc4c9d721cc02f25ea33a28  aqua-installer" | sha256sum -c -
 
 chmod a+x aqua-installer
 if [ "$_REMOTE_USER" = root ]; then
