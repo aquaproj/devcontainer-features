@@ -2,6 +2,6 @@
   extends: [
     'github>suzuki-shunsuke/renovate-config#4.0.0',
     'github>suzuki-shunsuke/renovate-config:nolimit#4.0.0',
-    'github>aquaproj/aqua-renovate-config:installer-script#2.12.1(src/aqua-installer/install\\.sh)',
+    'github>aquaproj/aqua-renovate-config:installer-script#2.13.0(src/aqua-installer/install\\.sh)',
   ],
 }
