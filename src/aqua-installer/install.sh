@@ -45,7 +45,7 @@ else
 fi
 cd "$tempdir"
 
-url=https://raw.githubusercontent.com/aquaproj/aqua-installer/v4.0.5/aqua-installer
+url=https://raw.githubusercontent.com/aquaproj/aqua-installer/v4.1.1/aqua-installer
 
 if has_command curl; then
 	curl --retry 5 -sSfL -O "$url"
@@ -53,7 +53,7 @@ elif has_command wget; then
 	wget "$url"
 fi
 
-echo "451028d56959cc738564885b1dbebc2691ea038ffde04e2472e4d486a3591146  aqua-installer" | sha256sum -c -
+echo "c0acde4802a1edd8b8201fd4cc1f0e52700cd4feb875f9c9793381b5b0ca2065  aqua-installer" | sha256sum -c -
 
 chmod a+x aqua-installer
 if [ "$_REMOTE_USER" = root ]; then
