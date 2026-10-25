@@ -4,4 +4,18 @@
     'github>suzuki-shunsuke/renovate-config:nolimit#4.0.0',
     'github>aquaproj/aqua-renovate-config:installer-script#2.14.0(src/aqua-installer/install\\.sh)',
   ],
+  customManagers: [
+    {
+      // npm i -g @devcontainers/cli@0.89.0
+      customType: 'regex',
+      managerFilePatterns: [
+        '/^\\.github/workflows/.*\\.ya?ml$/',
+      ],
+      matchStrings: [
+        'npm i(?:nstall)? -g @devcontainers/cli@(?<currentValue>[^\'" \\n]+)',
+      ],
+      datasourceTemplate: 'npm',
+      depNameTemplate: '@devcontainers/cli',
+    },
+  ],
 }
