@@ -13,12 +13,10 @@ workflows:
         - 'devcontainers/action@v1.4.4'
     '.github/workflows/watch-star.yaml':
         - 'suzuki-shunsuke/watch-star-action@v0.1.1'
-    '.github/workflows/wc-renovate-config-validator.yaml': []
     '.github/workflows/wc-test.yaml':
         - 'actions/checkout@v7.0.1'
         - 'actions/setup-node@v7.1.0'
-    '.github/workflows/workflow_call_test.yaml':
-        - 'dorny/paths-filter@v4.0.3'
+    '.github/workflows/workflow_call_test.yaml': []
 dependencies:
     'actions/checkout@v7.0.1':
         ref: 'v7.0.1'
@@ -35,11 +33,6 @@ dependencies:
         commit: 'sha1-bef2cf2d1a019b00b45e184f83035e01bd1972f3'
         owner_id: 102692984
         repo_id: 499316426
-    'dorny/paths-filter@v4.0.3':
-        ref: 'v4.0.3'
-        commit: 'sha1-ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d'
-        owner_id: 1588572
-        repo_id: 265601040
     'suzuki-shunsuke/actionlint-action@v0.2.2':
         ref: 'v0.2.2'
         commit: 'sha1-83c4a4a3b228afcf6dbf79d793c742de182de31e'

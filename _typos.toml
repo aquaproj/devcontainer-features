@@ -1,0 +1,3 @@
+[default.extend-words]
+# i(?:nstall)? in regular expressions
+nstall = "nstall"
