@@ -45,7 +45,7 @@ else
 fi
 cd "$tempdir"
 
-url=https://raw.githubusercontent.com/aquaproj/aqua-installer/611554c6f0137ba41c8dd15aca8bee82504ea461/aqua-installer # v4.1.1
+url=https://raw.githubusercontent.com/aquaproj/aqua-installer/b8be739961814ee66b9e0d505f4d5de0d2eff047/aqua-installer # v4.1.2
 
 if has_command curl; then
 	curl --retry 5 -sSfL -O "$url"
